@@ -1,4 +1,4 @@
-#git Git commands.md
+# #git Git commands.md
 
 Git helps us to be smarter programmers when we are alone and stronger when we work together.
 
@@ -12,7 +12,6 @@ This creates a .git folder in the current directory.
 
 
 ## prepare to commit file(s)
-git add {filename or directory}
 git add {filename or directory}
 
 
@@ -34,13 +33,13 @@ git rm -r {directory name}
 
 ## Delete all missing files (as seen in a git status)
 This one is in case you deleted a file not using "git rm {file}"
-from http://stackoverflow.com/questions/1402776/how-do-i-commit-all-deleted-files-in-git
 
 git add -u
 
 
 ## rename a file
 git mv {original file name} {new file name}
+
 git commit -m "Renamed a file :)"
 
 
@@ -48,6 +47,7 @@ git commit -m "Renamed a file :)"
 git log
 
 ... or for a graphical user interface ....
+
 gitk
 
 
@@ -59,11 +59,14 @@ git branch
 
 ## create a new branch from the current branch and switch to it
 git branch {new branch name}
+
 git checkout {new branch name}
 
 ## go back to specific commit and create a new branch from it
 git checkout {hash of the commit}
+
 git branch {new branch name}
+
 git checkout {new branch name}
 
 
@@ -73,7 +76,7 @@ git checkout {new branch name}
 ## clone a remote repository to your local machine
 git clone {url of the repository}
 
-Example using HTTP... 
+### Example using HTTP... 
 
 git clone https://github.com/open-learning-exchange/BeLL-School-Library.git
 
@@ -100,20 +103,25 @@ git branch -a
 Now pick one and check it out...
 
 git checkout {remote repository name}/{name of branch}
+
 git branch {name of branch}
+
 git checkout {name of branch}
 
-Example...
+
+### Example...
 
 git checkout origin/some-branch-name
+
 git branch {name of branch}
+
 git checkout {name of branch}
 
 
 ## push a local branch to a remote git repository
 git push -u {remote repository name} {name of local branch}
 
-Exampple...
+### Example...
 git push -u origin experimental
 
 
