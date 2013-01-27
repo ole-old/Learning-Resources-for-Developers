@@ -45,6 +45,9 @@ git commit -m "Renamed a file :)"
 ## Reset to your last commit
 git reset --hard
 
+## Reset a specific file to last commit
+git checkout {file name}
+
 
 ## See history
 git log
