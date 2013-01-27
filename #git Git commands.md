@@ -42,6 +42,9 @@ git mv {original file name} {new file name}
 
 git commit -m "Renamed a file :)"
 
+## Reset to your last commit
+git reset --hard
+
 
 ## See history
 git log
