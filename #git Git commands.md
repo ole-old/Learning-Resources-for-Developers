@@ -11,7 +11,7 @@ git init
 This creates a .git folder in the current directory.
 
 
-# prepare to commit file(s)
+## prepare to commit file(s)
 git add {filename or directory}
 git add {filename or directory}
 
